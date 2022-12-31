@@ -6,11 +6,14 @@
 
 ## Descrição do projeto 
 
-<p>Projeto em React Native utilizando o Expo Manager Workflow para aplicar conceitos
-sobre React e React Native, entre 
-eles estão a componentização, estados, imutabilidade, hooks e como o React Native 
-renderiza interfaces nativas. Além de aplicar o Typescript no projeto para adicionar 
-tipagem estática à aplicação. </p>
+<p>
+     Aplicação de controle de tarefas no estilo to-do list, que contém as seguintes funcionalidades:
+
+- Adicionar uma nova tarefa
+- Marcar e desmarcar uma tarefa como concluída
+- Remover uma tarefa da listagem
+- Mostrar o progresso de conclusão das tarefas
+</p>
 
      
 
