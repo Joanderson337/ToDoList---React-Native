@@ -1,87 +1,89 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet } from "react-native";
 
-export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#1A1A1A',
-    padding: 40
-  },
-  containerTitle: {
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  eventNameTo: {
-    color: '#4EA8DE',
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginTop: 60,
-    marginRight: 4
-  },
-  eventNameDo: {
-    color: '#5E60CE',
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginTop: 60
-  },
-  form: {
-    width: '100%',
-    flexDirection: 'row',
-    marginTop: 36,
-    marginBottom: 42,
-  },
-  input: {
-    flex: 1,
-    height: 56,
-    backgroundColor: '#262626',
-    borderRadius: 5,
-    color: '#FFFF',
-    padding: 16,
-    fontSize: 16,
-    marginRight: 12
-  },
-  buttonText: {
-    color: '#FFF',
-    fontSize: 24,
-  },
-  button: {
-    width: 56,
-    height: 56,
-    borderRadius: 5,
-    backgroundColor: '#1E6F9F',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  status: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  containerStatus: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  criadas: {
-    color: '#4EA8DE',
-    fontWeight: '700',
-    fontSize: 14,
-    lineHeight: 14,
-    marginRight: 10
-  },
-  statusCriadas:{
-    color: '#D9D9D9',
-    backgroundColor: '#333333',
-    fontSize: 12,
-    borderRadius: 50,
-    paddingTop: 3,
-    paddingBottom: 3,
-    paddingLeft: 5,
-    paddingRight: 5
-  },
-  concluidas: {
-    color: '#8284FA',
-    fontWeight: '700',
-    fontSize: 14,
-    lineHeight: 14,
-    marginRight: 10
-  }
-})
+export const styles = (taskListIsEmpty: boolean) =>
+  StyleSheet.create({
+    container: {
+      flex: 1,
+    },
+    logoContainer: {
+      backgroundColor: "#0D0D0D",
+      height: "25%",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    logoImage: {
+      height: 40,
+      width: 150,
+    },
+    contentContainer: {
+      flex: 1,
+      backgroundColor: "#1A1A1A",
+      paddingHorizontal: 25,
+    },
+    inputContainer: {
+      flexDirection: "row",
+      marginTop: -30,
+      marginBottom: 40,
+    },
+    input: {
+      flex: 1,
+      height: 56,
+      backgroundColor: "#262626",
+      borderRadius: 5,
+      color: "#FFFF",
+      padding: 16,
+      fontSize: 16,
+      marginRight: 12,
+    },
+    button: {
+      width: 56,
+      height: 56,
+      borderRadius: 5,
+      backgroundColor: "#1E6F9F",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    progressContainer: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      paddingBottom: 25,
+      borderBottomWidth: taskListIsEmpty ? 1 : 0,
+      borderBottomColor: "#333333",
+    },
+    countContainer: {
+      flexDirection: "row",
+      alignItems: "center",
+    },
+    countTitle: {
+      color: "#4EA8DE",
+      marginRight: 15,
+      fontWeight: "bold",
+    },
+    countNumberContainer: {
+      backgroundColor: "#333",
+      paddingHorizontal: 10,
+      paddingVertical: 2,
+      borderRadius: 10,
+    },
+    countNumberText: {
+      color: "#fff",
+    },
+    emptyListContainer: {
+      flex: 1,
+      alignItems: "center",
+      justifyContent: "center",
+      marginTop: 50,
+    },
+    emptyListTitle: {
+      color: "#808080",
+      fontSize: 14,
+      textAlign: "center",
+      fontWeight: "bold",
+      marginTop: 20,
+    },
+    emptyListText: {
+      color: "#808080",
+      fontSize: 14,
+      textAlign: "center",
+    },
+  });
