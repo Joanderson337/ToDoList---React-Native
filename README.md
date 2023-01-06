@@ -16,7 +16,6 @@
 </p>
 
      
-
 ## Para executar o projeto ⤸
      
    * 1 - Baixe o app do expo em seu celular
